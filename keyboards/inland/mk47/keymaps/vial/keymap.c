@@ -16,6 +16,16 @@
 
 #include QMK_KEYBOARD_H
 
+#define _LAYER0 0
+#define _LAYER1 1
+#define _LAYER2 2
+#define _LAYER3 3
+#define _LAYER4 4
+#define _LAYER5 5
+#define _LAYER6 6
+
+enum custom_keycodes { LAYER0 = SAFE_RANGE, LAYER1, LAYER2, LAYER3, LAYER4, LAYER5, LAYER6, DFWIN, DFMAC };
+
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -32,9 +42,33 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, RGB_SPD, RGB_VAD, RGB_SPI),
 
     [2] = LAYOUT(
-        KC_ESC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC,
+        QK_BOOT, DFWIN, DFMAC, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC,
         KC_CAPS, KC_EXLM, KC_AT, KC_HASH, KC_DLR, KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_TRNS,
         KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_UP, KC_SLSH,
         KC_LCTL, KC_NO, KC_LALT, KC_DEL, KC_PGDN, KC_SPC, KC_PGUP, KC_NO, KC_LEFT, KC_DOWN, KC_RGHT)
 };
+
 // clang-format on
+
+void persistent_default_layer_set(uint16_t default_layer) {
+    eeconfig_update_default_layer(default_layer);
+    default_layer_set(default_layer);
+}
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case DFWIN:
+            if (record->event.pressed) {
+                persistent_default_layer_set(1UL << _LAYER0);
+            }
+            return false;
+            break;
+        case DFMAC:
+            if (record->event.pressed) {
+                persistent_default_layer_set(1UL << _LAYER1);
+            }
+            return false;
+            break;
+    }
+    return true;
+}
