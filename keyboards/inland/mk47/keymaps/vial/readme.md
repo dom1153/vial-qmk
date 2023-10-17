@@ -14,6 +14,12 @@ At vial_qmk root:
 
 `python3 util/vial_generate_keyboard_uid.py`
 
+## Flashing
+
+Hold down top left key, then plug in usb
+
+`qmk flash -kb inland/mk47 -km vial`
+
 ## Setup VS Code
 
 `qmk generate-compilation-database -kb inland/mk47 -km vial`
@@ -21,6 +27,8 @@ At vial_qmk root:
 Will generate `compile_commands.json` at root.
 
 # Notes
+
+Setting up `vial.json` was a pain, but worth it
 
 # Settings
 
@@ -34,11 +42,15 @@ Custom Keys:
 
 ## Convert QMK config json into keymap.c
 
-[QMK Json Converter](https://jhelvy.shinyapps.io/qmkjsonconverter/)
+https://jhelvy.shinyapps.io/qmkjsonconverter/
 
-## Vial Layout Generator
+## Keyboard Layout Generator
 
 http://www.keyboard-layout-editor.com/
+
+## Vial.json documentation
+
+https://get.vial.today/docs/porting-to-via.html
 
 ## Setting up VSCode for QMK
 

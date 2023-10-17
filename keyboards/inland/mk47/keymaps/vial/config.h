@@ -36,4 +36,4 @@
     { 0, 4 }
 #define VIAL_UNLOCK_COMBO_COLS \
     { 0, 5 }
-#define DYNAMIC_KEYMAP_LAYER_COUNT 5
+#define DYNAMIC_KEYMAP_LAYER_COUNT 7
