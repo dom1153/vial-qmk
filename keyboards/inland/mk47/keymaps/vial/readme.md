@@ -6,8 +6,6 @@
 
 `qmk compile -kb inland/mk47 -km vial`
 
-Use `.bin` file, not `.hex`
-
 ## Vial Generate UID
 
 At vial_qmk root:
@@ -28,7 +26,10 @@ Will generate `compile_commands.json` at root.
 
 # Notes
 
-Setting up `vial.json` was a pain, but worth it
+Setting up `vial.json` was a pain, but worth it.
+
+Keymap should be nearly identical to planck, besides the double 1u in the center.
+Function layer is instead activted with `update_tri_layer_state()`.
 
 # Settings
 
