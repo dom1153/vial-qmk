@@ -16,6 +16,18 @@ Will generate `compile_commands.json` at root.
 
 # Notes
 
+## QMK CLI conversions
+
+> .vil to qmk does not exists
+
+> note for nixos: may require gcc / clang.
+
+> Also,sure to setup qmk home
+
+-   `qmk via2json -kb planck/rev6_drop -o /tmp/test.json planck-v4.json`
+
+-   `qmk json2c -o /tmp/test.ccc /tmp/test.json`
+
 # Settings
 
 ```
