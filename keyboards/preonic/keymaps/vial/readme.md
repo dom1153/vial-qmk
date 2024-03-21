@@ -37,7 +37,10 @@ Will generate `compile_commands.json` at root.
 ## Convert QMK config json into keymap.c
 
 ```
-qmk json2c -kb preonic/rev3 -o /tmp/test.c keymap.c
+vscode> copy path of active file'
+shell> cdf <path>
+qmk json2c -o /tmp/test.c preonic_rev3_drop_layout_ortho_5x12_mine.json
+qmk json2c preonic_rev3_drop_layout_ortho_5x12_mine.json | nvim -
 ```
 
 ## CLI documentation

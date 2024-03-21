@@ -4,6 +4,16 @@
     "productId": "0xA649",
     "matrix": { "rows": 10, "cols": 6 },
     "lighting": "qmk_rgblight",
+    "customKeycodes": [
+        { "name": "SP Alt", "title": "Special Alt", "shortName": "SP_ALT" },
+        { "name": "SP Gui", "title": "Special Gui", "shortName": "SP_GUI" },
+        { "name": "SP Win", "title": "Activate to Windows layout", "shortName": "SP_WIN" },
+        {
+            "name": "SP Mac",
+            "title": "Activate to Mac layout",
+            "shortName": "SP_MAC"
+        }
+    ],
     "layouts": {
         "labels": [["Layout", "MIT (1x2u)", "Grid (2x1u)", "2x2u", "2x3u"]],
         "keymap": [
