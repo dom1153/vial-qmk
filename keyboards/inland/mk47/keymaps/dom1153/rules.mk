@@ -1,6 +1,5 @@
 VIA_ENABLE = yes
 VIAL_ENABLE = yes
-<<<<<<< HEAD
 RGB_MATRIX_ENABLE = yes
 VIALRGB_ENABLE = yes
 LTO_ENABLE = yes
@@ -10,7 +9,3 @@ CONSOLE_ENABLE = no
 TAP_DANCE_ENABLE = yes
 COMBO_ENABLE = yes
 KEY_OVERRIDE_ENABLE = yes
-=======
-
-VIALRGB_ENABLE = yes
->>>>>>> upstream/vial

@@ -1,0 +1,46 @@
+{
+    "folders": [
+        {
+            "path": "..",
+            "name": "vial (root)"
+        },
+        {
+            "path": "../keyboards/inland/mk47",
+            "name": "inland mk47 (keyboard)"
+        },
+        {
+            "path": "../keyboards/inland/mk47/keymaps/dom1153",
+            "name": "inland mk47 keymap (dom1153)"
+        },
+        {
+            "path": "../keyboards/beekeeb/piantor",
+            "name": "beekeeb piantor (keyboard)"
+        },
+        {
+            "path": "../keyboards/beekeeb/piantor/keymaps/dom1153",
+            "name": "beekeeb piantor keymap (dom1153)"
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "*.h": "c",
+            "*.c": "c",
+            "*.inc": "c",
+            "*.cpp": "cpp",
+            "*.hpp": "cpp",
+            "xstddef": "c",
+            "type_traits": "c",
+            "utility": "c",
+            "ranges": "c"
+        },
+        "clangd.arguments": [
+            "--header-insertion=never"
+        ],
+        "workbench.colorCustomizations": {
+            "[Material Theme]": {},
+            "activityBar.background": "#0C350F",
+            "titleBar.activeBackground": "#114A15",
+            "titleBar.activeForeground": "#F3FCF3"
+        }
+    }
+}

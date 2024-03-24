@@ -4,7 +4,7 @@
 
 # Compile QMK firmware
 
-`qmk compile -kb inland/mk47 -km vial`
+`qmk compile -kb inland/mk47 -km vial --compiledb`
 
 ## Vial Generate UID
 
