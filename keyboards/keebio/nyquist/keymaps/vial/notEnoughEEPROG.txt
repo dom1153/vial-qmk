@@ -1,3 +1,0 @@
-not enough eeprom
-
-https://get.vial.today/docs/firmware-size.html

@@ -1,0 +1,6 @@
+Not enough eeprom
+
+https://get.vial.today/docs/firmware-size.html
+
+Use normal qmk_firmware repo for nyquist.
+
